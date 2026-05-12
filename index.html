@@ -285,10 +285,10 @@
       <p class="eyebrow">Computational Biology &amp; Machine Learning</p>
       <h1>Prisha<br><em>Sanyal-Aich</em></h1>
       <p class="tagline">
-        4th-year Biotech undergrad building at the intersection of machine learning and biology —
-        from microbiome phenotyping to histopathology image classification.
-        Self-teaching ML/DL to bridge the gap between biology and computer science,
-        and equally comfortable with a pipette and a Jupyter notebook.
+        4th-year Biotech student at KIIT, mostly interested in what machine learning
+        can do with biological data. I work on this through internships and self-directed
+        projects — metabolomics, histopathology, gene expression — while keeping one foot
+        in the wet lab. Learning most of the computational side as I go.
       </p>
       <div class="links-row">
         <a class="pill" href="mailto:psanyalaich@gmail.com">
@@ -313,18 +313,20 @@
     <h2>A bit about me</h2>
     <div class="about-body">
       <p>
-        I'm a 4th-year B.Tech + M.Tech student in Biotechnology at KIIT University, Bhubaneswar,
-        with a growing focus on the computational side of biology. My work sits at the intersection
-        of machine learning and biology — I'm interested in building interpretable models that can
-        make sense of complex biological data, from gut microbiomes to tumor microenvironments.
+        I'm a 4th-year B.Tech + M.Tech student in Biotechnology at KIIT University, Bhubaneswar.
+        My academic background is biology, but over the past couple of years I've been spending
+        more and more time on the computational side — building ML pipelines, processing omics
+        data, and figuring out what the numbers actually mean biologically.
       </p>
       <p>
-        I've been fortunate to intern at two research institutes — currently at the
-        <strong>Institute of Life Sciences, Bhubaneswar</strong> (working on histopathology image
-        classification for oral cancer detection under Dr. Shantibhusan Senapati), and previously at
+        I've interned at two research institutes — currently at the
+        <strong>Institute of Life Sciences, Bhubaneswar</strong> (working on histopathology
+        image classification for oral cancer and studying tumor microenvironment dynamics in
+        pancreatic cancer, under Dr. Shantibhusan Senapati), and previously at
         <strong>NISER, Bhubaneswar</strong> (investigating TRP ion channel conservation and AMTB
         dose-response effects under Prof. Chandan Goswami). I also contribute to open-source
-        AI/Agents projects as a GSSoC '24 contributor.
+        projects — as a GSSoC '24 contributor (Open Source Track) and currently
+        as a GSSoC '26 contributor (AI/Agents Track).
       </p>
       <p>
         I'm largely self-taught on the computational side — working through ML and DL concepts
@@ -371,7 +373,7 @@
         <ul>
           <li>Studying tumor microenvironment (TME) dynamics in pancreatic cancer, with a focus on immune–stromal interactions and inflammation-driven signaling pathways.</li>
           <li>Running qPCR experiments to assess gene expression across TME cell populations under varying experimental conditions.</li>
-          <li>Building and validating a classical ML pipeline for histopathology image classification of oral squamous cell carcinoma (OSCC) vs. normal tissue; exploring deep learning extensions.</li>
+          <li>Building and validating a classical ML pipeline for histopathology image classification of oral squamous cell carcinoma (OSCC) vs. normal tissue using handcrafted image features; exploring deep learning extensions as a next step.</li>
           <li>Writing Python/R scripts for preprocessing and visualizing gene expression data; applying normalization and dimensionality reduction to explore biological patterns.</li>
         </ul>
         <div>
@@ -461,23 +463,29 @@
         </div>
       </div>
 
-      <!-- Microbiome -->
+      <!-- Multi-disease metabolomics -->
       <div class="project-item">
         <div>
           <a class="project-name-link" href="https://github.com/psanyalaich/multidisease-metabolomics-ml" target="_blank" rel="noopener">
-            Microbiome-Based Host Phenotype Prediction
+            Multi-Disease Classification from Serum Metabolomics
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
           <p class="project-desc">
-            Explored gut microbiome composition as a predictor of host phenotype using supervised ML.
-            Applied CLR normalization to address compositional bias in 16S rRNA data, computed diversity
-            metrics, and trained Random Forest and neural network classifiers. Feature importance analysis
-            identified taxa most associated with phenotype labels. AUC &gt; 0.75 on held-out test sets.
+            End-to-end ML pipeline for classifying multiple chronic diseases from LC-MS serum
+            metabolomics data. Implemented a standardized preprocessing workflow — random forest
+            imputation, log(1+x) transformation, Pareto scaling, and ComBat batch correction to
+            handle inter-study technical variation. Benchmarked eight supervised classifiers
+            (Logistic Regression, Linear and RBF SVM, Random Forest, XGBoost, k-NN, MLP, and
+            PLS-DA) for both binary (disease vs. control) and four-class settings using stratified
+            5-fold cross-validation, reporting F1-scores and bootstrapped ROC-AUC estimates (95% CI).
+            Mapped discriminative metabolites to KEGG enzyme commission numbers and pathway classes
+            to construct disease–metabolite–enzyme–pathway networks, revealing disease-specific
+            and shared metabolic signatures across conditions.
           </p>
         </div>
         <div class="badges">
           <span class="badge-wip">⏳ In Progress</span>
-          <span class="project-badge">QIIME2 · scikit-learn</span>
+          <span class="project-badge">scikit-learn · R · KEGG</span>
         </div>
       </div>
 
@@ -651,12 +659,11 @@
         <p class="edu-desc">
           Completed schooling with a science stream. Served as <strong>Secretary of the Symphony Club</strong>
           (academic year 2018–19), organising music events and coordinating club activities.
-          Also an active athlete — played multiple sports and
-          <strong>won a basketball tournament in 2019</strong>.
+          Was also actively involved in sports throughout school.
         </p>
         <div class="edu-activities">
           <span class="edu-tag">Symphony Club — Secretary (2018–19)</span>
-          <span class="edu-tag">Basketball — Tournament Winner (2019)</span>
+          <span class="edu-tag">Sports</span>
         </div>
       </div>
 
