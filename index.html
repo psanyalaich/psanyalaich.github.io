@@ -243,6 +243,49 @@
     .edu-divider { height: 1px; background: var(--rule); margin-top: 2.2rem; }
 
     /* ── Footer ─────────────────────────────── */
+    /* ── Video grid ─────────────────────────── */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .video-card {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      background: var(--bg2);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .video-card:hover {
+      border-color: var(--red-lt);
+      box-shadow: 0 4px 16px rgba(140,28,19,0.08);
+    }
+
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 700px) {
+      .video-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 440px) {
+      .video-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Footer ─────────────────────────────── */
     footer {
       position: relative; z-index: 1; border-top: 1px solid var(--rule);
       padding: 2rem; text-align: center;
@@ -270,6 +313,7 @@
   <a class="brand" href="#hero">Prisha Sanyal-Aich</a>
   <ul>
     <li><a href="#about">About</a></li>
+    <li><a href="#performances">Violin</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -321,12 +365,12 @@
       <p>
         I've interned at two research institutes — currently at the
         <strong>Institute of Life Sciences, Bhubaneswar</strong> (working on histopathology
-        image classification for oral cancer and studying tumor microenvironment dynamics in
+        image classification for oral and tongue cancer, and studying tumor microenvironment dynamics in
         pancreatic cancer, under Dr. Shantibhusan Senapati), and previously at
         <strong>NISER, Bhubaneswar</strong> (investigating TRP ion channel conservation and AMTB
         dose-response effects under Prof. Chandan Goswami). I also contribute to open-source
-        projects — as a GSSoC '24 contributor (Open Source Track) and currently
-        as a GSSoC '26 contributor (AI/Agents Track).
+        projects — previously as a GSSoC '24 contributor (Open Source Track), and currently
+        contributing to GSSoC '26 (AI/Agents Track).
       </p>
       <p>
         I'm largely self-taught on the computational side — working through ML and DL concepts
@@ -340,7 +384,8 @@
       <p>
         Outside the lab, I've been playing violin for 16 years — classically trained with a
         <strong>Sangeet Visharad</strong> degree, and more recently exploring Western violin.
-        I also shoot photography and have been reading into astrobiology.
+        I was also a <strong>Child Radio Artist at All India Radio, Cuttack</strong> from 2020 to 2023.
+        I shoot photography and have been reading into astrobiology.
       </p>
     </div>
     <div class="about-tags">
@@ -353,6 +398,7 @@
       <span class="tag">Deep Learning</span>
       <span class="tag">Wet Lab</span>
       <span class="tag">Violin · Sangeet Visharad</span>
+      <span class="tag">All India Radio — Child Radio Artist</span>
       <span class="tag">Astrobiology (curious)</span>
     </div>
   </section>
@@ -623,6 +669,42 @@
     </div>
   </section>
 
+  <!-- ══ VIOLIN PERFORMANCES ══ -->
+  <section id="performances">
+    <p class="section-label">// violin performances</p>
+    <h2>Some recordings</h2>
+    <p style="margin-bottom:2rem;max-width:640px;">A mix of classical Indian, Western, and folk pieces recorded over the years.</p>
+    <div class="video-grid">
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/uWxHA_tGrvg" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/FiTxuTWbknA" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/M17_pre43Gg" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/Ghg2sKyBuxw" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/yRY1HE35pMM" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/Ire0aEMiDDE" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/8-1UJe48pWA" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/jKZpwretDns" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+      <div class="video-card"><div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/-M5GVYskHz8" title="Violin performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div></div>
+    </div>
+  </section>
+
   <!-- ══ EDUCATION ══ -->
   <section id="education">
     <p class="section-label">// education</p>
@@ -635,7 +717,7 @@
           <span class="edu-org">KIIT University, Bhubaneswar</span>
           <span class="edu-period">2023 – 2028</span>
         </div>
-        <div class="edu-degree">B.Tech + M.Tech (Dual Degree) · Biotechnology · CGPA 8.0/10</div>
+        <div class="edu-degree">B.Tech + M.Tech (Dual Degree) · Biotechnology</div>
         <p class="edu-desc">
           Dual degree programme in biotechnology, with a self-directed focus on computational
           biology and machine learning. Coursework covers molecular biology, genomics, and
@@ -643,7 +725,7 @@
         </p>
         <div class="edu-activities">
           <span class="edu-tag">SPIC MACAY – KIIT Chapter (Violinist)</span>
-          <span class="edu-tag">KORUS – University Music Club (Violinist)</span>
+          <span class="edu-tag">KORUS – Music &amp; Dance Club (Violinist)</span>
           <span class="edu-tag">Kreative Eye – Photography &amp; Broadcasting Club</span>
         </div>
       </div>
@@ -655,15 +737,13 @@
           <span class="edu-org">SAI International School, Bhubaneswar</span>
           <span class="edu-period">2009 – 2023</span>
         </div>
-        <div class="edu-degree">AISSE &amp; AISSCE (Science) · Grade 10: 87.5% · Grade 12: 86.8%</div>
+        <div class="edu-degree">AISSE &amp; AISSCE (Science)</div>
         <p class="edu-desc">
-          Completed schooling with a science stream. Served as <strong>Secretary of the Symphony Club</strong>
+          Completed schooling with a science stream (Physics, Chemistry, and Biology). Served as <strong>Secretary of the Symphony Club</strong>
           (academic year 2018–19), organising music events and coordinating club activities.
-          Was also actively involved in sports throughout school.
         </p>
         <div class="edu-activities">
           <span class="edu-tag">Symphony Club — Secretary (2018–19)</span>
-          <span class="edu-tag">Sports</span>
         </div>
       </div>
 
