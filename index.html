@@ -414,11 +414,10 @@
     </div>
     <div class="entry-role">Summer Research Intern · Dr. Shantibhusan Senapati</div>
     <div class="entry-body">
-      <p>Studying tumor microenvironment (TME) dynamics in pancreatic cancer, as well as oral cancer. </p>
+      <p>Studying tumor microenvironment (TME) dynamics in pancreatic and oral cancer. </p>
       <p> Running qPCR experiments to assess gene expression across TME cell populations under varying experimental conditions. </p>
-      <p>Building and validating a classical ML pipeline for histopathology image classification of oral squamous cell carcinoma (OSCC) vs. normal tissue using handcrafted image features; exploring deep learning extensions as a next step. </p>
+      <p>Built a computational pathology pipeline for oral squamous cell carcinoma (OSCC) histopathology classification using handcrafted image descriptors and classical machine learning approaches for reproducible evaluation across multiple microscopic magnifications.. </p>
     </div>
-    <a class="entry-link" href="https://github.com/psanyalaich/oral-cancer-histopathology-ml" target="_blank" rel="noopener">→ OSCC Classification (GitHub)</a>
   </div>
 
   <div class="entry">
@@ -438,7 +437,6 @@
         post-hoc testing for Area, Perimeter, and Integrated Density.
       </p>
     </div>
-    <a class="entry-link" href="https://github.com/psanyalaich/trpm8-lipid-droplet-analysis" target="_blank" rel="noopener">→ AMTB Dose-Response Analysis (GitHub)</a>
   </div>
 </section>
 
@@ -451,16 +449,15 @@
       <span class="project-title">
         <a href="https://github.com/psanyalaich/oral-cancer-histopathology-ml" target="_blank" rel="noopener">Oral Cancer Histopathology Classification</a>
       </span>
-      <span class="project-status">In progress</span>
     </div>
-    <div class="project-meta">@ ILS · scikit-learn, OpenCV, Python</div>
-    <p class="project-desc">
-      Classical ML pipeline classifying H&amp;E-stained oral histopathology slides (Normal vs. OSCC,
-      230 patients, open-source dataset). Handcrafted features: colour statistics, LBP, and
-      Haralick/GLCM descriptors. Random Forest and SVM benchmarked across magnifications, dataset
-      sizes, and feature sets under 5-fold stratified cross-validation. Best result: SVM + Haralick
-      at 100× (AUC 0.988 on balanced set). Pipeline pending validation on lab-generated data;
-      deep learning extensions in exploration.
+    <div class="project-meta">@ILS · Python · scikit-learn · OpenCV</div>
+      <p class="project-desc">
+        Computational pathology pipeline for classification of H&amp;E-stained oral histopathology images (Normal vs. OSCC) using handcrafted image features and classical machine learning methods. Implemented Haralick texture descriptors, Local Binary Patterns (LBP), and colour-based features with Random Forest and SVM benchmarking across multiple magnifications and feature combinations.
+      </p>
+    
+      <p class="project-desc" style="margin-top:0.7rem;">
+        The project includes reproducible cross-validation workflows, feature extraction pipelines, learning curve analysis, calibration analysis, explainability visualizations, and structured experiment tracking across ~250 experimental runs. Best-performing models achieved strong discrimination between normal and OSCC tissue on the evaluated dataset.
+      </p>
     </p>
   </div>
 
